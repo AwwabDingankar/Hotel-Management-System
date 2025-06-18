@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Room - DreamStay</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🏨 DreamStay Hotel</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Book Now</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Room Booking Form</h2>
+
+      <form class="booking-form" id="bookingForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="room">Room Type:</label>
+        <select id="room" name="room" required>
+          <option value="">-- Select Room</option>
+          <option value="Deluxe Room">Deluxe Room</option>
+          <option value="Suite Room">Suite Room</option>
+          <option value="Single Room">Single Room</option>
+        </select>
+
+        <label for="checkin">Check-In Date:</label>
+        <input type="date" id="checkin" name="checkin" required />
+
+        <label for="checkout">Check-Out Date:</label>
+        <input type="date" id="checkout" name="checkout" required />
+
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+
+      <p id="confirmation" style="text-align: center; color: green"></p>
+    </main>
+
+    <footer>
+      <p>© 2025 DreamStay Hotel. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
